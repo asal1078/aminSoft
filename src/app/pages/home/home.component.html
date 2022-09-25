@@ -1,0 +1,320 @@
+<!-- Start Section1 -->
+<div class="section container firstSection-margin">
+    <div class="row justify-content-between">
+        <div class="col-lg-4 col-sm-8 col-md-6 col-xs-11 pt-2">
+            <h4>
+                قیمت و خرید و آنی بیت کوین
+            </h4>
+        </div>
+        <div class="col-lg-2 col-sm-2 col-md-2 col-xs-12 col-2 px-5">
+            <div class="row justify-content-center">
+                <img src="../assets/images/Bitcoin.svg.png" width="80">
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-lg-3 col-sm-4 col-md-5 col-xs-12">
+            <h5>
+                اطلاعات بازار حرفه ای :
+            </h5>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12 info-card">
+            <h6>
+                میانگین قیمت 7d :
+            </h6>
+            <p>
+                2454.54USDT
+            </p>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12 info-card mx-5">
+            <h6>
+                بالاترین قیمت تاکنون :
+            </h6>
+            <p>
+                2454.54USDT
+            </p> 
+        </div>
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12 info-card">
+            <h6>
+                حجم معاملات 24h :
+            </h6>
+            <p>
+                2454.54USDT
+            </p> 
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-3 col-sm-3 col-md-5 col-xs-12">
+            <h5>
+                اطلاعات بازار اصلی :
+            </h5>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12 info-card">
+            <h6>
+                میانگین قیمت 7d :
+            </h6>
+            <p>
+                2454.54USDT
+            </p>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12 info-card mx-5">
+            <h6>
+                بالاترین قیمت تاکنون :
+            </h6>
+            <p>
+                2454.54USDT
+            </p> 
+        </div>
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12 info-card">
+            <h6>
+                حجم معاملات 24h :
+            </h6>
+            <p>
+                2454.54USDT
+            </p> 
+        </div>
+    </div>
+</div>
+<!-- End Section1 -->
+
+
+<!-- Start Section2 -->
+<div class="section container secondSection-margin">
+    <div class="row btn-selOrBuy-fram justify-content-center">
+        <div class="col-6 btn-selOrBuy-col">
+            <button class="py-2" [ngClass]="isBuy ? 'btn-selOrBuy-select' : 'btn-selOrBuy'" (click)="selectBuy()">
+                خرید
+            </button>
+        </div>
+        <div class="col-6 btn-selOrBuy-col">
+            <button class="py-2" (click)="selectSel()" [ngClass]="isSel ? 'btn-selOrBuy-select' : 'btn-selOrBuy'">
+                فروش
+            </button>
+         </div>
+    </div>
+    <div *ngIf="isBuy">
+        <div class="container mt-4">
+            <div class="row justify-content-center exchange-input-fram">
+                <div class="col-5">
+                    <h6 style="text-align: start;">
+                        مقدار بیت کوین
+                    </h6>
+                    <input class="exchange-input"> 
+                </div>
+                <div class="col-1 pt-5">
+                    =
+                </div>
+                <div class="col-5">
+                    <h6 style="text-align: start;">
+                        قیمت واحد
+                    </h6>
+                    <input class="exchange-input"> 
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 secondSection-padding">
+                    <p>
+                        موجودی کل: 20 بیت کوین
+                    </p>
+                    <p>
+                        موجودی قابل معامله: 20 بیت کوین
+                    </p>
+                    <p>
+                        بالاترین پیشنهاد فروش: 45425225 تومان
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 secondSection-padding">
+                    <p>
+                         درخواست خرید شما: 20 بیت کوین
+                    </p>
+                    <p>
+                        دریافتی کل: 20 بیت کوین
+                    </p>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                            کارمزد: 0 بیت کوین
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                            مبلغ کل: 454 تومان
+                        </div>
+                    </div> 
+                 </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <button class="btn-blue-max">
+                        ثبت سفارش خرید
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="isSel">
+        <div class="container mt-4">
+            <div class="row justify-content-center exchange-input-fram">
+                <div class="col-5">
+                    <h6 style="text-align: start;">
+                        مقدار بیت کوین
+                    </h6>
+                    <input class="exchange-input"> 
+                </div>
+                <div class="col-1 pt-5">
+                    =
+                </div>
+                <div class="col-5">
+                    <h6 style="text-align: start;">
+                        قیمت واحد
+                    </h6>
+                    <input class="exchange-input"> 
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 secondSection-padding">
+                    <p>
+                        موجودی کل: 20 بیت کوین
+                    </p>
+                    <p>
+                        موجودی قابل معامله: 20 بیت کوین
+                    </p>
+                    <p>
+                        بالاترین پیشنهاد فروش: 45425225 تومان
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 secondSection-padding">
+                    <p>
+                         درخواست خرید شما: 20 بیت کوین
+                    </p>
+                    <p>
+                        دریافتی کل: 20 بیت کوین
+                    </p>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                            کارمزد: 0 بیت کوین
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                            مبلغ کل: 454 تومان
+                        </div>
+                    </div> 
+                 </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <button class="btn-blue-max">
+                        فروش
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Section2 -->
+
+
+<!-- Start Section3 -->
+<div class="section container thirdSection-margin">
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <h2>
+                46865.21
+            </h2>
+            <p style="color: green;">
+                  +12345.34(+45.44%) past year
+            </p>
+        </div>
+        <div class="col-lg-2 col-sm-2 col-md-2 col-xs-12 col-2 px-5">
+            <div class="row justify-content-center">
+                <img src="./assets/images/coins.png" width="100">
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-end mt-4">
+        <div class="col-lg-3 col-sm-3 col-md-4 col-xs-12">
+            <p>
+                1D &nbsp; 1M &nbsp; 3M &nbsp; 1Y &nbsp; 5Y &nbsp; All
+            </p>
+        </div>
+    </div>
+        
+    
+    <canvasjs-chart [options]="chartOptions"></canvasjs-chart> 
+</div>
+<!-- End Section3 -->
+
+<!-- Start Section4 -->
+<div class="section container fourthSection-margin">
+    <h4>
+        لورم ایپسوم متن ساختگی
+    </h4>
+    <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+    </p>
+    <h4 class="mt-4">
+        لورم ایپسوم متن ساختگی
+    </h4>
+    <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
+    </p>
+    <h4 class="mt-4">
+        لورم ایپسوم متن ساختگی
+    </h4>
+    <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
+    </p>
+    <h4 class="mt-4">
+        لورم ایپسوم متن ساختگی
+    </h4>
+    <p class="mt-3">
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم 
+    </p>
+    <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم 
+    </p>
+    <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم 
+    </p>
+</div>
+<!-- End Section4 -->
+
+
+<!-- Start Section5 -->
+<div class="section container fifthSection-margin">
+    <h4>
+        سوالات متداول
+    </h4>
+    <div class="row justify-content-between" *ngFor="let question of questions; let i = index">
+        <button class="btn-dropdown" (click)="openAnswer(i)">
+            <div class="row justify-content-between">
+                <div class="col-10 btn-dropdown-title">
+                    {{question.title}}
+                </div>
+                <div class="col-1">
+                    <div *ngIf="question.visibleAnswer == true">
+                        -
+                    </div>
+                    <div *ngIf="question.visibleAnswer == false">
+                        +
+                    </div>
+                </div>
+            </div>
+        </button>
+        <div class="container mt-1" [ngClass]="question.visibleAnswer ? 'btn-dropdown-answer-section-visible' : 'btn-dropdown-answer-section-hidden'">
+            <div class="row btn-dropdown-answer-section justify-content-center">
+                <div class="col-12">
+                    <h5>
+                        {{question.answerTitle}}
+                    </h5>
+                    <p>
+                        {{question.answer}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Section5 -->

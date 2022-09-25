@@ -1,0 +1,97 @@
+<div class="container mt-4 navMenu-container">
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <button class="btn-primary-min mx-2">ورود</button>
+            <button class="btn-blue-min">ثبت نام</button>
+        </div>
+        <div class="col-5 navMenu__links-fram">
+            <a [routerLink]="['/home']" class="navMenu-link" routerLinkActive="navMenu-link-active">
+                صفحه اصلی
+            </a>
+            <a [routerLink]="['#']" class="navMenu-link mx-4" routerLinkActive="navMenu-link-active">
+                قیمت ارزهای دیجیتال
+            </a>
+            <a [routerLink]="['#']" class="navMenu-link" routerLinkActive="navMenu-link-active">
+                راهنما
+            </a>
+            <a [routerLink]="['#']" class="navMenu-link mx-4" routerLinkActive="navMenu-link-active">
+                بلاگ
+            </a>
+            <a [routerLink]="['#']" class="navMenu-link" routerLinkActive="navMenu-link-active">
+                پشتیبانی
+            </a>
+        </div>
+        <div class="col-1 navMenu__links-fram">
+            <ng-switchery name="switchery-check"></ng-switchery>
+        </div>
+        <div class="col-1 navMenu__links-fram logo">
+            logo
+        </div>
+    </div>
+</div>
+
+
+<!-- Start Moblie -->
+<button (click)="showMobileMenu()" [ngClass]="showingMobileMenu ? 'menu-open-button-hidden' : 'menu-open-button'">
+    <img src="../../../assets/icons/bars-solid.svg" class="icon">
+</button>
+<div class="container" [ngClass]="showingMobileMenu ? 'navMenu-mobile-container-visible' : 'navMenu-mobile-container-hidden'">
+    <div class="row justify-content-center my-2">
+        <div class="col-5">
+            <button class="btn-blue-max">
+                ثبت نام
+            </button>
+        </div>
+        <div class="col-5">
+            <button class="btn-primary-max">
+                ورود
+            </button>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center my-2">
+        <div class="col-6">
+            <a [routerLink]="['/home']" class="navMenu-link" routerLinkActive="navMenu-link-active">
+                صفحه اصلی
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center my-2">
+        <div class="col-6">
+            <a [routerLink]="['#']" class="navMenu-link" routerLinkActive="navMenu-link-active">
+                قیمت ارزهای دیجیتال
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center my-2">
+        <div class="col-6">
+            <a [routerLink]="['#']" class="navMenu-link" routerLinkActive="navMenu-link-active">
+                راهنما
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center my-2">
+        <div class="col-6">
+            <a [routerLink]="['#']" class="navMenu-link" routerLinkActive="navMenu-link-active">
+                بلاگ
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center my-2">
+        <div class="col-6">
+            <a [routerLink]="['#']" class="navMenu-link" routerLinkActive="navMenu-link-active">
+                پشتیبانی
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <button class="menu-close-button" (click)="showMobileMenu()">
+            بستن
+        </button>
+    </div>
+</div>
+<!-- End Mobile -->

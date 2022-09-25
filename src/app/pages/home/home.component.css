@@ -1,0 +1,4 @@
+::ng-deep .canvasjs-chart-container {
+    direction: rtl !important;
+    text-align: right !important;
+}

@@ -1,0 +1,51 @@
+.section {
+    width: 90%;
+    left: 9%;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    position: absolute;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@media screen and (max-width:768px) {
+    .section {
+        left: 5%;
+    } 
+}
+
+.section h5 {
+    color: rgb(39, 81, 219);
+    width: fit-content;
+}
+
+.section h4 {
+    font-weight: bolder;
+    color: rgb(39, 81, 219)
+}
+
+.info-card {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(153, 182, 245, 0.178);
+    border: 1px solid rgb(43, 92, 197);
+    border-radius: 12px;
+}
+
+@media screen and (max-width:768px) {
+    .info-card {
+        margin-top: 20px;
+    } 
+}
+
+.info-card h6 {
+    font-weight: bold;
+    color: rgb(59, 127, 206);
+}
+
+.info-card P {
+    margin: auto;
+    direction: ltr !important;
+}

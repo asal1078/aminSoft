@@ -1,0 +1,130 @@
+.btn-blue-min {
+    border: none;
+    width: 6rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(43, 92, 197);
+    transition: all 0.3s;
+    border: 2px solid rgb(43, 92, 197);
+}
+
+.btn-blue-min:hover {
+    color: rgb(43, 92, 197);
+    background-color: transparent;
+}
+
+.btn-primary-min {
+    border: 2px solid rgb(43, 92, 197);
+    width: 6rem;
+    color: rgb(43, 92, 197);
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.btn-primary-min:hover {
+    color: white;
+    background-color: rgb(43, 92, 197);
+}
+
+.btn-blue-max {
+    border: 2px solid rgb(43, 92, 197);
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(43, 92, 197);
+    transition: all 0.3s;
+
+}
+
+.btn-blue-max:hover {
+    color: rgb(43, 92, 197);
+    background-color: transparent;
+}
+
+.btn-primary-max {
+    border: 1px solid rgb(43, 92, 197);
+    width: 100%;
+    color: rgb(43, 92, 197);
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: none;
+    transition: all 0.3s;
+}
+
+.btn-primary-max:hover {
+    color: white;
+    background-color: rgb(43, 92, 197);
+}
+
+.btn-selOrBuy-fram {
+    background-color: rgba(153, 182, 245, 0.178);
+    border: 1px solid rgb(43, 92, 197);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.btn-selOrBuy-col {
+    text-align: center;
+}
+
+.btn-selOrBuy {
+    width: 100%;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(43, 92, 197);
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-selOrBuy:hover {
+    color: white;
+    background-color: rgb(43, 92, 197);
+}
+
+.btn-selOrBuy-select {
+    width: 100%;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(43, 92, 197);
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-dropdown {
+    margin-top: 10px;
+    background-color: transparent;
+    height: 4rem;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.61);
+}
+
+.btn-dropdown-title {
+    text-align: right;
+}
+
+.btn-dropdown-answer-section-hidden {
+    display: none;
+}
+
+.btn-dropdown-answer-section-visible {
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    padding: 20px;
+}
+
+.btn-dropdown-answer-section-visible p {
+    color: rgba(128, 128, 128, 0.719);
+}

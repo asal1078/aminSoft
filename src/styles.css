@@ -1,0 +1,26 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import 'assets/styles/button.css';
+@import 'assets/styles/sections.css';
+@import 'assets/styles/input.css';
+@import 'assets/styles/responsive.css';
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+
+@font-face {
+    font-family: shabnam;
+    src: url(assets/font/Shabnam.eot);
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(assets/font/Vazir.ttf);
+}
+
+* {
+    font-family: vazir !important;
+    direction: rtl !important;
+}
+
+.icon {
+    width: 40px;
+}

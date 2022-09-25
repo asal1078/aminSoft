@@ -1,0 +1,70 @@
+.firstSection-margin {
+    margin-top: 8rem;
+}
+
+@media screen and (max-width:768px) {
+    .firstSection-margin {
+        margin-top: 4rem;
+    } 
+}
+
+.secondSection-margin {
+    margin-top: 43rem;
+}
+
+@media screen and (max-width:768px) {
+    .secondSection-margin {
+        margin-top: 67rem;
+    } 
+}
+
+.thirdSection-margin {
+    margin-top: 80rem;
+}
+
+@media screen and (max-width:768px) {
+    .thirdSection-margin {
+        margin-top: 112rem;
+    } 
+}
+
+.fourthSection-margin {
+    margin-top: 125rem;
+}
+
+@media screen and (max-width:768px) {
+    .fourthSection-margin {
+        margin-top: 155rem;
+    } 
+}
+
+.fifthSection-margin {
+    margin-top: 168rem;
+}
+
+@media screen and (max-width:768px) {
+    .fifthSection-margin {
+        margin-top: 225rem;
+    } 
+}
+
+.footer-margin {
+    margin-top: 175rem;
+}
+
+@media screen and (max-width:768px) {
+    .footer-margin {
+        margin-top: 240rem;
+    } 
+}
+
+.secondSection-padding {
+    padding-right: 3rem;
+}
+
+@media screen and (max-width:768px) {
+    .secondSection-padding {
+        padding-right: 0rem;
+        text-align: center;
+    } 
+}
